@@ -11,7 +11,6 @@ public class Main {
         //    new Dog("Fido") ifadesiyle Dog sınıfının constructor'ı çalışır.
         //    Animal sınıfının referansıyla Dog sınıfının metotlarını kullanabiliriz.
 
-
         // 2) dog nesnesinin makeSound() metodu çalıştığında, üst sınıftaki değil,
         //    Dog sınıfındaki override (geçersiz kılma) edilmiş metot devreye girer.
 
@@ -20,6 +19,19 @@ public class Main {
         //    name değişkeni Animal içinde private tanımlı. Ona doğrudan dog.name şeklinde erişemeyiz.
         //    Onun yerine getName() metodunu kullanıyoruz.
 
+        String name = "Pınar";
+
+        Animal benimHayvanim = new Animal("Pınar");
+
+        System.out.println(benimHayvanim.getName());
+
+        Cat benimKedim = new Cat("Mırnav", "Siyah");
+
+        System.out.println(benimKedim.getName() + ' ' + benimKedim.color);
+
+        benimHayvanim.makeSound();
+
+        benimKedim.makeSound();
  }
 }
 
