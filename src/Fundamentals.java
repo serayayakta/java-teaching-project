@@ -1,6 +1,13 @@
 public class Fundamentals {
+    public String student;
+    public String teacher;
 
-    public void PrintFundamentals() {
+    public Fundamentals(String studentName, String teacherName) {
+        this.student = studentName;
+        this.teacher = teacherName;
+    }
+
+    public static void PrintFundamentals() {
 
         System.out.println("=== Welcome to the Java Fundamentals Demo! ===\n");
 
@@ -28,6 +35,11 @@ public class Fundamentals {
         double myDouble = 1.23456789;
         char myChar = 'A';
         boolean myBoolean = true;
+
+        String [] myPermutations = {"000", "001", "010", "011", "100", "101", "110", "111"};
+
+        int myMaxInt = Integer.MAX_VALUE;
+        System.out.println("Max int: " + myMaxInt);
 
         // Print them out
         System.out.println("byte myByte: " + myByte);
@@ -71,7 +83,7 @@ public class Fundamentals {
          * - Demonstrates concatenation, length, and a few fundamental methods.
          */
         System.out.println("--- Strings & Basic Methods ---");
-        String greet = "Hello";
+        String greet = "Hello mello";
         String who = "World";
         System.out.println("greet: " + greet);
         System.out.println("who: " + who);
@@ -79,7 +91,7 @@ public class Fundamentals {
         System.out.println("Length of greet: " + greet.length());
         System.out.println("greet.toUpperCase(): " + greet.toUpperCase());
         System.out.println("greet.toLowerCase(): " + greet.toLowerCase());
-        System.out.println("greet.charAt(0): " + greet.charAt(0));
+        System.out.println("greet.charAt(last char): " + greet.charAt(greet.length() - 1)); //son karakteri verir
         System.out.println("greet.contains(\"ell\"): " + greet.contains("ell"));
         System.out.println();
 
@@ -97,6 +109,7 @@ public class Fundamentals {
         System.out.println("a / b = " + (a / b));  // integer division
         System.out.println("a % b = " + (a % b));  // modulus
         System.out.println("Is a > b? " + (a > b));
+        System.out.println("Is a == b? " + (a == b));
         System.out.println();
 
         /*
@@ -118,7 +131,7 @@ public class Fundamentals {
          * - Demonstrate casting from double to int and from larger to smaller types.
          */
         System.out.println("--- Casting ---");
-        double castDouble = 9.99;
+        double castDouble = 9.99723692736;
         int castInt = (int) castDouble;
         System.out.println("castInt (from 9.99): " + castInt);
 
@@ -143,9 +156,10 @@ public class Fundamentals {
 
         // For Loop
         System.out.print("For Loop (numbers 1 to 5): ");
-        for (int i = 1; i <= 5; i++) {
+        for (int i = 1; i <= 5; i++) { //i=i+1;
             System.out.print(i + " ");
         }
+
         System.out.println();
 
         // While Loop
@@ -155,6 +169,7 @@ public class Fundamentals {
             System.out.print(count + " ");
             count--;
         }
+
         System.out.println("\n");
 
         /*
@@ -162,7 +177,7 @@ public class Fundamentals {
          * - Demonstrates array declaration, indexing, loop through an array.
          */
         System.out.println("--- Arrays ---");
-        int[] numbers = { 10, 20, 30, 40, 50 }; // fixed size array
+        int[] numbers = { 10, 20, 30, 40, 50, 609 }; // fixed size array
         System.out.println("Array length: " + numbers.length);
         System.out.println("Element at index 2: " + numbers[2]);
 
@@ -171,6 +186,10 @@ public class Fundamentals {
         for (int num : numbers) {
             System.out.print(num + " ");
         }
+        for(int i =0; i< numbers.length; i++){
+            System.out.println(numbers[i]);
+        }
+
         System.out.println("\n");
 
         /*

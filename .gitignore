@@ -27,3 +27,6 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+###  IntelliJ automatically generated this file to keep track of your VCS settings for the project. it’s just a small settings/config file used by the IDE.
+.idea/
